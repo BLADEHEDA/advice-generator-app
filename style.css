@@ -1,0 +1,61 @@
+:root{
+ --Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+}
+body{
+    margin:0;
+    padding:0;
+    background: hsl(218, 23%, 16%);
+}
+.container{
+    background: hsl(217, 19%, 24%);
+    width:25em;
+    border-radius: 10px;
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+text-align:center;
+/* padding:1rem; */
+}
+.pattern{
+    width:90%; 
+    margin:2em 0em -1em 0em
+}
+.click{
+border:none;
+border-radius:50%;
+padding:1em;
+background:hsl(150, 100%, 66%);
+position:relative;
+top:2em;
+cursor:pointer;
+}
+.click:hover{
+    background:hsl(193, 38%, 86%);
+    box-shadow: 0 0 50px hsl(148, 93%, 61%);
+}
+.icon-dice{
+    width:80%; 
+}
+.advice-text{
+    color:hsl(193, 38%, 86%);
+    font-size:25px;
+    font-weight: 600;
+    margin: 0 50px 0 50px;
+    /* border:solid 1px black; */
+}
+.advice-num{
+    color:hsl(193, 38%, 86%);
+}
+@media(max-width:375px){
+    .container{
+        width:90%;
+    }
+    .click{
+        padding:1.3em;
+        }
+}
